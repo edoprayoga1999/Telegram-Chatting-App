@@ -1,0 +1,33 @@
+.loginContent {
+  background-color: #FFF;
+  width: 30%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 30px;
+  box-shadow: 0px 20px 20px rgba(126, 152, 223, 0.05);
+}
+.containerLogin {
+  background-color: #F6F6F6;
+  height: 100vh;
+  padding: 20px;
+}
+.inputForm {
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+.inputForm:focus {
+  outline: none;
+}
+.backButton:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  .loginContent {
+    width: 100%;
+  }
+  .containerLogin {
+    height: auto;
+  }
+}

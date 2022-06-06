@@ -1,0 +1,47 @@
+.searchClass:focus {
+  outline: none;
+}
+.userTab:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+}
+.userTab:active{
+  background: rgba(0, 0, 0, 0.2);
+}
+.backButton:hover {
+  cursor: pointer;
+}
+.delete:hover {
+  cursor: pointer;
+}
+.divChat {
+  width: 50%;
+}
+.chatInput {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+}
+
+.chatInput:focus {
+  outline: none;
+}
+
+.style2::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.style2::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+.style2::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #7E98DF;
+}
