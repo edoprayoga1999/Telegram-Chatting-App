@@ -7,6 +7,7 @@ import swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import Style from '../../assets/styles/auth.module.css';
+import AuthLayout from '../../components/AuthLayout';
 
 export default function EditProfile() {
 	const token = localStorage.getItem('token');
@@ -99,65 +100,64 @@ export default function EditProfile() {
 		}
 	}, [myProfileData]);
 	return (
-		<div className={`container-fluid d-flex justify-content-center align-items-center w-100 ${Style.containerLogin}`}>
-			<div className={`d-flex flex-column justify-content-center align-items-center ${Style.loginContent}`}>
-				<div style={{ display: 'flex', width: '80%', marginBottom: '30px', color: '#7E98DF' }}>
-					<Link to='/'><h3><FontAwesomeIcon icon={faAngleLeft} /></h3></Link>
-					<h3 style={{ margin: '0px auto 0px auto' }}>Edit Profile</h3>
-				</div>
-				<div
-					// eslint-disable-next-line no-undef
-					style={{ width: '100px', height: '100px', marginBottom: '30px', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/${profilePhoto}')`, borderRadius: '30px' }}>	
-				</div>
-				{buttonVisibility ? (<button
-					style={{ backgroundColor: '#7E98DF', color: '#FFF', border: 'none', borderRadius: '70px', padding: '15px', marginBottom: '30px' }}
-					onClick={() => {document.getElementById('submit').click();}}
-				>
-					{loadingPhoto ? (<><FontAwesomeIcon icon={faSpinner} spin />&nbsp;Loading</>) : 'Confirm Upload'}
-				</button>) : (<button
-					style={{ backgroundColor: '#7E98DF', color: '#FFF', border: 'none', borderRadius: '70px', padding: '15px', marginBottom: '30px' }}
-					onClick={() => {document.getElementById('photo').click();}}
-				>
-					Change Photo
-				</button>)}
-				<form id="form" onSubmit={(e) => photoSubmit(e)}>
-					<input
-						type="file"
-						id="photo"
-						onChange={(e) => {
-							setPhoto(e.target.files[0]);
-							setButtonVisibility(!buttonVisibility);
-						}}
-						style={{ display: 'none' }}
-					/>
-					<input type="submit" id="submit" style={{ display: 'none' }} />
-				</form>
-				<form style={{ width: '80%' }} onSubmit={(e) => { onSubmit(e); }} >
-					<p style={{ color: '#848484', margin: '0px' }}>Name</p>
-					<input type='text' className={Style.inputForm} placeholder='Your fullname' style={{ borderBottom: '1px solid #232323', marginBottom: '30px' }}
-						onChange={(e) => { setForm({ ...form, fullname: e.target.value }); }}
-						value={form.fullname}
-					/>
-					<p style={{ color: '#848484', margin: '0px' }}>Username</p>
-					<input type='text' className={Style.inputForm} placeholder='Your username' style={{ borderBottom: '1px solid #232323', marginBottom: '30px' }}
-						onChange={(e) => { setForm({ ...form, username: e.target.value }); }}
-						value={form.username}
-					/>
-					<p style={{ color: '#848484', margin: '0px' }}>Phone</p>
-					<input type='number' className={Style.inputForm} placeholder='Your phone' style={{ borderBottom: '1px solid #232323', marginBottom: '30px' }}
-						onChange={(e) => { setForm({ ...form, phone: e.target.value }); }}
-						value={form.phone}
-					/>
-					<p style={{ color: '#848484', margin: '0px' }}>Bio</p>
-					<textarea className={Style.inputForm} placeholder='Your bio' style={{ marginBottom: '30px', border: '1px solid #232323' }}
-						onChange={(e) => { setForm({ ...form, bio: e.target.value }); }}
-						value={form.bio}
-					/>
-					<button type='submit' style={{ width: '100%', backgroundColor: '#7E98DF', color: '#FFF', border: 'none', borderRadius: '70px', padding: '20px', marginBottom: '30px' }}>
-						{loading ? (<><FontAwesomeIcon icon={faSpinner} spin />&nbsp;Loading</>) : 'Edit'}
-					</button>
-				</form>
+		<AuthLayout>
+			<div style={{ display: 'flex', width: '80%', marginBottom: '30px', color: '#7E98DF' }}>
+				<Link to='/'><h3><FontAwesomeIcon icon={faAngleLeft} /></h3></Link>
+				<h3 style={{ margin: '0px auto 0px auto' }}>Edit Profile</h3>
 			</div>
-		</div>
+			<div
+				// eslint-disable-next-line no-undef
+				style={{ width: '100px', height: '100px', marginBottom: '30px', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/${profilePhoto}')`, borderRadius: '30px' }}>	
+			</div>
+			{buttonVisibility ? (<button
+				style={{ backgroundColor: '#7E98DF', color: '#FFF', border: 'none', borderRadius: '70px', padding: '15px', marginBottom: '30px' }}
+				onClick={() => {document.getElementById('submit').click();}}
+			>
+				{loadingPhoto ? (<><FontAwesomeIcon icon={faSpinner} spin />&nbsp;Loading</>) : 'Confirm Upload'}
+			</button>) : (<button
+				style={{ backgroundColor: '#7E98DF', color: '#FFF', border: 'none', borderRadius: '70px', padding: '15px', marginBottom: '30px' }}
+				onClick={() => {document.getElementById('photo').click();}}
+			>
+					Change Photo
+			</button>)}
+			<form id="form" onSubmit={(e) => photoSubmit(e)}>
+				<input
+					type="file"
+					id="photo"
+					onChange={(e) => {
+						setPhoto(e.target.files[0]);
+						setButtonVisibility(!buttonVisibility);
+					}}
+					style={{ display: 'none' }}
+				/>
+				<input type="submit" id="submit" style={{ display: 'none' }} />
+			</form>
+			<form style={{ width: '80%' }} onSubmit={(e) => { onSubmit(e); }} >
+				<p style={{ color: '#848484', margin: '0px' }}>Name</p>
+				<input type='text' className={Style.inputForm} placeholder='Your fullname' style={{ borderBottom: '1px solid #232323', marginBottom: '30px' }}
+					onChange={(e) => { setForm({ ...form, fullname: e.target.value }); }}
+					value={form.fullname}
+				/>
+				<p style={{ color: '#848484', margin: '0px' }}>Username</p>
+				<input type='text' className={Style.inputForm} placeholder='Your username' style={{ borderBottom: '1px solid #232323', marginBottom: '30px' }}
+					onChange={(e) => { setForm({ ...form, username: e.target.value }); }}
+					value={form.username}
+				/>
+				<p style={{ color: '#848484', margin: '0px' }}>Phone</p>
+				<input type='number' className={Style.inputForm} placeholder='Your phone' style={{ borderBottom: '1px solid #232323', marginBottom: '30px' }}
+					onChange={(e) => { setForm({ ...form, phone: e.target.value }); }}
+					value={form.phone}
+				/>
+				<p style={{ color: '#848484', margin: '0px' }}>Bio</p>
+				<textarea className={Style.inputForm} placeholder='Your bio' style={{ marginBottom: '30px', border: '1px solid #232323' }}
+					onChange={(e) => { setForm({ ...form, bio: e.target.value }); }}
+					value={form.bio}
+				/>
+				<button type='submit' style={{ width: '100%', backgroundColor: '#7E98DF', color: '#FFF', border: 'none', borderRadius: '70px', padding: '20px', marginBottom: '30px' }}>
+					{loading ? (<><FontAwesomeIcon icon={faSpinner} spin />&nbsp;Loading</>) : 'Edit'}
+				</button>
+			</form>
+		</AuthLayout>
+				
 	);
 }

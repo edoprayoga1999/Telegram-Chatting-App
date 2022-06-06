@@ -342,6 +342,7 @@ export default function Chat() {
 							{chat.length === 0 ? (<p>No messages</p>) : chat.map((item, index) => (
 								item.sender_id === parseInt(userId) ? (<div key={index} className='d-flex justify-content-end' style={{ width: '100%', marginBottom: '10px', position: 'relative' }}>
 									<div className={`d-flex justify-content-end align-items-center ${Style.divChat}`}>
+										<p className={Style.chatDate}>{moment(item.date).calendar()}</p>
 										<FontAwesomeIcon icon={faTrash} className={`${Style.delete} text-danger`}
 											onClick={() => { deleteMessage(item.id); }}
 										/>
@@ -361,9 +362,10 @@ export default function Chat() {
 												style={{ width: '55px', margin: 'auto 20px 0px 0px', height: '55px', backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/${receiver.photo}')`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', borderRadius: '20px' }}
 											/>
 										</div>
-										<p style={{ padding: '15px 30px', backgroundColor: '#7E98DF', color: '#fff', borderRadius: '35px 35px 35px 10px', maxWidth: '89%' }}>
+										<p className={Style.receiverChat}>
 											{item.message}
 										</p>
+										<p className={Style.receiverChatDate}>{moment(item.date).calendar()}</p>
 									</div>
 								</div>)
 							))}
