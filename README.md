@@ -117,13 +117,9 @@ Things that you need to run this application
 ## Screenshot
 
 <p align="center" display=flex>
+  <image src="screenshots/main-page.png" alt="Login Page" width=100%>
+    <p align="center">Main Page</p>
 <table>
-  <tr>
-    <td><image src="screenshots/main-page.png" alt="Login Page" width=100%></td>
-  </tr>
-  <tr>
-    <td>Main Page</td>
-  </tr>
   <tr>
     <td><image src="screenshots/login-page.png" alt="Login Page" width=100%></td>
     <td><image src="screenshots/register-page.png" alt="Register Page" width=100%/></td>
