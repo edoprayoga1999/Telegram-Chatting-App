@@ -1,70 +1,193 @@
-# Getting Started with Create React App
+<div id="top"></div>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/edoprayoga1999/Telegram-Chatting-App/">
+    <img src="screenshots/logo.svg" alt="Logo" width="80" height="80">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">Telegram - Chatting App</h3>
 
-## Available Scripts
+  <p align="center">
+    Send your message to everyone!
+    <br />
+    <a href="https://github.com/edoprayoga1999/Telegram-Chatting-App/"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://telegram-chatting-app.vercel.app/">View Demo</a>
+    ·
+    <a href="https://github.com/edoprayoga1999/Telegram-Chatting-App/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/edoprayoga1999/Telegram-Chatting-App/issues">Request Feature</a>
+    <br />
+    <p align="center">
+    <a href="https://reactjs.org/"><img src="https://img.shields.io/github/package-json/dependency-version/edoprayoga1999/Telegram-Chatting-App/react"></a>
+    <a href="https://axios-http.com/"><img src="https://img.shields.io/github/package-json/dependency-version/edoprayoga1999/Telegram-Chatting-App/axios"></a>
+    <a href="https://redux.js.org/"><img src="https://img.shields.io/github/package-json/dependency-version/edoprayoga1999/Telegram-Chatting-App/redux"></a>
+    <a href="https://getbootstrap.com/"><img src="https://img.shields.io/github/package-json/dependency-version/edoprayoga1999/Telegram-Chatting-App/bootstrap"></a>
+    <img src="https://img.shields.io/github/license/edoprayoga1999/Telegram-Chatting-App">
+    </p>
+  </p>
+</div>
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
 
-### `npm start`
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Telegram is a chat application where every user can connect and chat with each other in real time.
 
-### `npm run build`
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built With
 
-### `npm run eject`
+This application is built with the following technologies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* [Javascript](https://www.javascript.com/)
+* [CSS](https://developer.mozilla.org/id/docs/Web/CSS)
+* [React.js](https://reactjs.org/)
+* [Axios](https://axios-http.com)
+* [Redux](https://axios-http.com)
+* [Bootstrap](https://getbootstrap.com)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+<!-- GETTING STARTED -->
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To set up this project locally and get a local copy up, follow thes simple steps.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
 
-### Code Splitting
+Things that you need to run this application
+* Node.js
+  
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone this front-end repository
+   ```sh
+   git clone https://github.com/edoprayoga1999/Telegram-Chatting-App.git
+   ```
+2. Go to repo local folder
+   ```sh
+   cd Telegram-Chatting-App
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Setup your env , based on env.example
+   ```
+   REACT_APP_BACKEND_URL= 
+   ```
+5. Run your app
+   ```
+   npm run start
+   ```
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
+## Screenshot
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="center" display=flex>
+<table>
+  <tr>
+    <td><image src="screenshots/main-page.png" alt="Login Page" width=100%></td>
+  </tr>
+  <tr>
+    <td>Main Page</td>
+  </tr>
+  <tr>
+    <td><image src="screenshots/login-page.png" alt="Login Page" width=100%></td>
+    <td><image src="screenshots/register-page.png" alt="Register Page" width=100%/></td>
+  </tr>
+   <tr>
+    <td>Login Page</td>
+    <td>Register Page</td>
+  </tr>
+  
+  <tr>
+    <td><image src="screenshots/see-my-profile.png" alt="My Profile" width=100%></td>
+    <td><image src="screenshots/see-receiver-profile.png" alt="Receiver detail" width=100%/></td>
+  </tr>
+  <tr>
+    <td>When seeing my profile</td>
+    <td>When seeing receiver profile</td>
+  </tr>
 
-### Making a Progressive Web App
+  <tr>
+    <td><image src="screenshots/chatting.png" alt="Chatting" width=100%></td>
+    <td><image src="screenshots/edit-profile.png" alt="Edit Profile Page" width=100%></td>
+  </tr>
+  <tr>
+      <td>When chatting</td>
+      <td>Edit Profile Page</td>
+  </tr>
+  
+</table>
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- CONTRIBUTING -->
+## Contributing
 
-### Advanced Configuration
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-### Deployment
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Related Sroject
+
+:rocket: [`Telegram Backend`](https://github.com/edoprayoga1999/Telegram-Chatting-App-Backend)
+
+<!-- CONTACT -->
+## Contact
+
+Edo Prayoga - [fb.me/edoprayoga1999](https://facebook.com/edoprayoga1999) - edoprayoga.se@gmail.com
+
+Project Link: [https://github.com/edoprayoga1999/Telegram-Chatting-App](https://github.com/edoprayoga1999/Telegram-Chatting-App)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
