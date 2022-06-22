@@ -25,6 +25,8 @@
     <a href="https://axios-http.com/"><img src="https://img.shields.io/github/package-json/dependency-version/edoprayoga1999/Telegram-Chatting-App/axios"></a>
     <a href="https://redux.js.org/"><img src="https://img.shields.io/github/package-json/dependency-version/edoprayoga1999/Telegram-Chatting-App/redux"></a>
     <a href="https://getbootstrap.com/"><img src="https://img.shields.io/github/package-json/dependency-version/edoprayoga1999/Telegram-Chatting-App/bootstrap"></a>
+    <a href="https://momentjs.com/"><img src="https://img.shields.io/github/package-json/dependency-version/edoprayoga1999/Telegram-Chatting-App/moment"></a>
+    <a href="https://socket.io/"><img src="https://img.shields.io/github/package-json/dependency-version/edoprayoga1999/Telegram-Chatting-App/socket.io-client"></a>
     <img src="https://img.shields.io/github/license/edoprayoga1999/Telegram-Chatting-App">
     </p>
   </p>
@@ -75,6 +77,8 @@ This application is built with the following technologies:
 * [Axios](https://axios-http.com)
 * [Redux](https://axios-http.com)
 * [Bootstrap](https://getbootstrap.com)
+* [Moment](https://momentjs.com/)
+* [socket.io-client](https://socket.io/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
