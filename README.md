@@ -27,7 +27,7 @@
     <a href="https://getbootstrap.com/"><img src="https://img.shields.io/github/package-json/dependency-version/edoprayoga1999/Telegram-Chatting-App/bootstrap"></a>
     <a href="https://momentjs.com/"><img src="https://img.shields.io/github/package-json/dependency-version/edoprayoga1999/Telegram-Chatting-App/moment"></a>
     <a href="https://socket.io/"><img src="https://img.shields.io/github/package-json/dependency-version/edoprayoga1999/Telegram-Chatting-App/socket.io-client"></a>
-    <img src="https://img.shields.io/github/license/edoprayoga1999/Telegram-Chatting-App">
+    <img src="https://img.shields.io/github/license/edoprayoga1999/Telegram-Chatting-App?color=blue">
     </p>
   </p>
 </div>
